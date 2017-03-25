@@ -3,14 +3,31 @@
 	<head>
 		<title>Find Your City</title>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--[if lt IE 9]>
-    	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    	<![endif]-->
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+    	<style>
+    		body {
+    			background-color: #c9c9c9;
+    		}
+    		#search-box {
+    			background-color: #8a8a8a;
+    			border-radius: 5px;
+    			padding: 20px;
+    		}
+    		button {
+    			padding: 50px;
+    		}
+    	</style>
 	</head>
 	<body>
-		<div></div>
+		<div class="container-fluid">
+			<div class="row search">
+				<div id="search-box" class="col-md-10 col-md-offset-2 center-block">
+					<form role="form" action="">
+						<input type="search" placeholder="Enter your city here" name="city-query">
+						<button type="submit" class="btn btn-primary">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
