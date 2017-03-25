@@ -1,0 +1,12 @@
+.image-head {
+  background-image:url(autumn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
