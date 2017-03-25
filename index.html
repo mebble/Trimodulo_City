@@ -4,6 +4,8 @@
 		<title>Find Your City</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="lib/skeleton/skeleton.css">
+		<link rel="stylesheet" type="text/css" href="lib/skeleton/normalize.css">
     	<style>
     		body {
     			background-color: #c9c9c9;
@@ -12,6 +14,9 @@
     			background-color: #8a8a8a;
     			border-radius: 5px;
     			padding: 20px;
+    			width: 100%;
+    			margin: 0 auto;
+    			box-shadow: 0px 2px 4px 0px rgb(99, 99, 99);
     		}
     		button {
     			padding: 50px;
@@ -19,11 +24,12 @@
     	</style>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row search">
-				<div id="search-box" class="col-md-10 col-md-offset-2 center-block">
-					<form role="form" action="">
+				<div id="search-box" class="one-half column" style="margin-top: 25%;">
+					<form role="form" action="" style="text-align: center; vertical-align: middle;">
 						<input type="search" placeholder="Enter your city here" name="city-query">
+						<p style="width: 10px;"></p>
 						<button type="submit" class="btn btn-primary">Search</button>
 					</form>
 				</div>
