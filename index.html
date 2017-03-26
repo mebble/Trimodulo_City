@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Find Your City</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="lib/skeleton/skeleton.css">
-		<link rel="stylesheet" type="text/css" href="lib/skeleton/normalize.css">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/get-weather.js"></script>
-    	<style>
-    		body {
-    			background-image: url("src/images/autumn.jpg");
-    		}
-    		#search-box {
-    			background-color: #e6e6e6;
-    			background-image: url("src/images/waves.png");
-    			background-position: -20px;
-    			border-radius: 5px;
-    			padding: 20px 20px;
-    			width: 100%;
-    			margin: 0px auto;
-    			box-shadow: 0px 2px 4px 0px rgb(99, 99, 99);
-    		}
-    		form {
-    			text-align: center;
-    			vertical-align: middle;
-    		}
-    		button {
-    			margin-left: 5%;
-    		}
-    	</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row" style="width: 500px; margin-left: 25%">
-				<div id="search-box" class="one-half column" style="margin-top: 50%;">
-					<form role="form" action="" method="get">
-						<p></p>
-						<input id="cityInput" type="search" placeholder="Enter your city here" name="city-query">
-						<button id="searchButton" type="submit" value="submit" class="btn btn-primary">Go</button>
-					</form>
-				</div>
+<head>
+	<title>Find Your City</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lib/skeleton/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="lib/skeleton/normalize.css">
+	<style type="text/css">
+		body {
+    		background-image: url("src/images/spring.jpg");
+    	}
+		* {
+			border-radius: 4px;
+			padding: 50px;
+		}
+		.row {
+			background-color: #da4242;
+		}
+		#search-box {
+    		background-color: #f1cd53;
+    		border-radius: 4px;
+    		padding: 10px 10px;
+    		box-shadow: 0px 1px 4px 0px rgb(105, 105, 105);
+    	}
+    	#info-box {
+    		background-color: #f1cd53;
+    		box-shadow: 0px 1px 4px 0px rgb(105, 105, 105);
+    	}
+    	form {
+    		text-align: center;
+    		vertical-align: middle;
+    	}
+    	button {
+    		margin-left: 5%;
+    		margin-top: 5%;
+    	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div id="search-box" class="five columns">
+				<form>
+					<input id="cityInput" type="text" placeholder="Enter your city here" name="city-query">
+					<button id="searchButton" class="btn btn-primary" type="button" value="submit">Go</button>
+				</form>
 			</div>
+			<div id="info-box" class="seven columns"></div>
 		</div>
-	</body>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/get-weather.js"></script>
+</body>
 </html>
