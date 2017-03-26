@@ -6,6 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="lib/skeleton/skeleton.css">
 		<link rel="stylesheet" type="text/css" href="lib/skeleton/normalize.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/get-weather.js"></script>
     	<style>
     		body {
     			background-image: url("src/images/autumn.jpg");
@@ -33,10 +35,10 @@
 		<div class="container">
 			<div class="row" style="width: 500px; margin-left: 25%">
 				<div id="search-box" class="one-half column" style="margin-top: 50%;">
-					<form role="form" action="" method="">
+					<form role="form" action="" method="get">
 						<p></p>
-						<input type="search" placeholder="Enter your city here" name="city-query">
-						<button type="submit" class="btn btn-primary">Go</button>
+						<input id="cityInput" type="search" placeholder="Enter your city here" name="city-query">
+						<button id="searchButton" type="submit" value="submit" class="btn btn-primary">Go</button>
 					</form>
 				</div>
 			</div>
